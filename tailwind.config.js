@@ -1,8 +1,17 @@
-/** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme';
+
 export default {
-  content: [],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: '360px',
+        ...defaultTheme.screens,
+      }
+    },
   },
   plugins: [],
 }
