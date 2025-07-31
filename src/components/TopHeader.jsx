@@ -1,12 +1,24 @@
-import React from 'react'
+import { HiOutlineX } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const TopHeader = () => {
     const [isVisible, setIsVisible] = useState(true);
     if(!isVisible) return null;
     
     return (
-    <div className="bg-blue-500 text-white text-center p-2">
-
+    <div className="bg-stone-900 px-4 py-2 flex items-center justify-center relative text-center">
+        <p className="text-white text-sm sm:text-base leading-snug max-w-[90%] sm:max-w-full">
+            Sign up and get 10% off your first order! 
+            Use code <span className="text-yellow-500 font-bold">WELCOME10</span>
+            <Link className="underline ml-1 sm:ml-2" to="/signup">Sign Up Now</Link>
+        </p>
+        <button
+        className="absolute right-3 top-1/2 -translate-y-1/2 text-white tex-xl sm:text-2xl"
+        onClick={() => setIsVisible(false)}
+        aria-label="Close banner">
+            <HiOutlineX />
+        </button>
     </div>
   );
 }
