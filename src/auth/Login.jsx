@@ -20,6 +20,51 @@ export const Login = () => {
         }
         
         return () => clearTimeout(timer);
-}, [navigate]);
+    }, 
+    [navigate]);
+
+    const handleLogin = (event) => {
+        event.preventDefault();
+        setError('');
+
+        if (!phone || !password) {
+            setError('Please fill in all fields');
+            return;
+        }
+
+        const phoneRegex = /^[0-9]{11}$/;
+        const trimmedPhone = phone.trim();
+        const trimmedPassword = password.trim();
+        if (!phoneRegex.test(trimmedPhone)) {
+            setError('Phone number must be 11 digits');
+            return;
+        }
+
+        if(trimmedPassword.length < 8 || trimmedPassword.length > 16) {
+            setError('Password must be between 8 to 16 characters');
+            return;
+        }
+
+        const users = JSON.parse(localStorage.getItem('users')) || [];
+        const user = users.find(
+            (user) => user.phone === trimmedPhone && user.password === trimmedPassword
+        );
+
+        if (user) {
+            localStorage.setItem(
+                'currentUser', 
+                JSON.stringify({ phone: trimmedPhone, loggedIn: true })
+            );
+            navigate('/');
+        } else {
+            setError('Invalid phone number or password');
+        }
+    };
+
+    return {
+        <div className="login-container">
+        
+    }
+
 
 }
