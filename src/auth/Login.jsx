@@ -61,10 +61,10 @@ export const Login = () => {
         }
     };
 
-    return {
-        <div className="login-container">
-        
-    }
+    return (
+        <div className="flex flex-col min-h-screen"></div>
 
+    );
+};
 
-}
+export default Login;
