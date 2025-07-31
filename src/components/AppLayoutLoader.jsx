@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const AppLayoutLoader = () => {
+const AppLayoutLoader = () => {
   return (
     <motion.div
         className="flex items-center justify-center min-h-screen bg-stone-900"
