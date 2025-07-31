@@ -37,15 +37,4 @@ const CartSummary = () => {
   )
 }
  
-
-//             <form className="py-2">
-
-            <button className="bg-black text-white py-2 px-4 ml-8 rounded-full">Apply</button>
-        </form>
-        <button className="w-full bg-black text-white py-2 rounded-full hover:opacity-90 transition">
-            Go to Checkout
-        </button>
-        </div>
-    </div>
-  )
-}
+export default CartSummary;
