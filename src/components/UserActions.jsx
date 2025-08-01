@@ -57,16 +57,10 @@ const UserActions = () => {
           </div>
 
           <div className="absolute top-full left-0 mt-2 w-48 bg-white border rounded-lg shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-20">
-            <Link
-              to="/login"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-stone-100 uppercase"
-            >
+            <Link to="/login" className="block px-4 py-2 text-sm text-gray-700 hover:bg-stone-100 uppercase">
               Login
             </Link>
-            <Link
-              to="/signup"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-stone-100 uppercase"
-            >
+            <Link to="/signup" className="block px-4 py-2 text-sm text-gray-700 hover:bg-stone-100 uppercase">
               Sign Up
             </Link>
           </div>
