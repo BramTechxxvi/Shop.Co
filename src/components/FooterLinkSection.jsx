@@ -1,5 +1,5 @@
-// import { Link } from "react-router-dom";
-// import { FaTwitter, FaInstagram, FaFacebookF, FaGithub, FaWhatsapp, FaSnapchat } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaTwitter, FaInstagram, FaFacebookF, FaGithub, FaWhatsapp, FaSnapchat } from "react-icons/fa";
 
 const sections = [
     {
@@ -58,14 +58,28 @@ const FooterLinkSection = () => {
             We have clothes that suita your style and which you're proud to wear. From women to men.
         </p>
         <div className="flex gap-3">
-            <Link to></Link>
-            <Link></Link>
-            <Link></Link>
-            <Link></Link>
-            <Link></Link>
-            <Link></Link>
-
+            <Link to="#"><FaTwitter className="text-xl" /></Link>
+            <Link to="#"><FaInstagram className="text-xl" /></Link>
+            <Link to="#"><FaFacebookF className="text-xl" /></Link>
+            <Link to="#"><FaGithub className="text-xl" /></Link>
+            <Link to="#"><FaWhatsapp className="text-xl" /></Link>
+            <Link to="#"><FaSnapchat className="text-xl" /></Link>
         </div>
     </div>
+    {sections.map((section, index) => (
+        <div key={index} className="mt-8">
+            <h3 className="text-lg font-semibold text-stone-900 mb-4">{section.title}</h3>
+            <ul className="space-y-2">
+                {section.links.map((link, linkIndex) => (
+                    <li key={linkIndex}>
+                        <Link to="#" className="text-stone-700 hover:text-stone-900 transition-colors duration-200">
+                            {link}
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    ))
+    }
   )
 }
