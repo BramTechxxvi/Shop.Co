@@ -6,7 +6,6 @@ const stats = [
     { value: 100000, suffix: "+", label: "Happy Customers" },
 ];
 
-
 const CustomerReactionCounter = () => {
   return (
     <section className="w-full py-10">
@@ -29,7 +28,7 @@ const CustomerReactionCounter = () => {
         </div>
       </div> 
     </section>
-  );
-};
+  )
+}
 
 export default CustomerReactionCounter;
