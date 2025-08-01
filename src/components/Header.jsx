@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { IoMenu, IoClose } from 'react-icons/io5';
 import Logo from './Logo';
-import Highlights from './HighLights';
+import Highlights from './Highlights';
 import SearchBar from './SearchBar';
 import UserActions from './UserActions';
 import TopHeader from './TopHeader';
