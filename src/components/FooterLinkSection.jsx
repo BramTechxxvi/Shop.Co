@@ -41,8 +41,7 @@ const sections = [
 ];
 
 const FooterLinkSection = () => {
-  return (
-  );
+  return ();
 };
 
-export
+export default FooterLinkSection;
