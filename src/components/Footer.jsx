@@ -1,4 +1,4 @@
-import FooterLinksSection from './FooterLinksSection';
+import FooterLinksSection from './FooterLinkSection';
 import FooterSocials from './FooterSocials';
 import Subscribe from './Subscribe';
 

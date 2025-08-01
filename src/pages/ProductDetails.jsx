@@ -4,7 +4,7 @@ import { HiMinus, HiPlus } from "react-icons/hi";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../api/cartSlice";
 import Loader from "../components/Loader";
-import CustomerTestimonials from "../components/CustomerTestimonials";
+import CustomerTestimonials from "../components/CustomerTestimonial";
 import { toast } from "react-toastify";
 
 const ProductDetails = () => {

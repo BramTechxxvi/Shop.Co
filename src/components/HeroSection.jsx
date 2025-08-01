@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import CustomerReactionCounter from "./CustomerReactionCouter"; 
+import CustomerReactionCounter from "./CustomerReactionCounter"; 
 import ProductBrands from "./ProductBrands";
 
 const HeroSection = () => {
