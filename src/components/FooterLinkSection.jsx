@@ -54,7 +54,7 @@ const FooterLinkSection = () => {
         </div>
         </Link>
 
-        <p></p>
+        <p classsName=""></p>
     </div>
   )
 }
