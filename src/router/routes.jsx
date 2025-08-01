@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import Login from "../auth/Login"
-import Signup from "../auth/Signup"
+import Signup from "../auth/SignUp"
 import PageNotFound from "../pages/PageNotFund";
 import CartPage from "../pages/CartPage";
 import ProductDetails from "../pages/ProductDetails";
