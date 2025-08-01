@@ -54,7 +54,18 @@ const FooterLinkSection = () => {
         </div>
         </Link>
 
-        <p classsName=""></p>
+        <p classsName="w-48 py-5 hover:text-stone-900 transition-colors duration-200 text-stone-700">
+            We have clothes that suita your style and which you're proud to wear. From women to men.
+        </p>
+        <div className="flex gap-3">
+            <Link to></Link>
+            <Link></Link>
+            <Link></Link>
+            <Link></Link>
+            <Link></Link>
+            <Link></Link>
+
+        </div>
     </div>
   )
 }
