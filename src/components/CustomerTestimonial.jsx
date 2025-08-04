@@ -4,13 +4,13 @@ import { HiOutlineChevronLeft, HiOutlineChevronRight } from "react-icons/hi";
 const testimonials = [
   {
     star: "⭐⭐⭐⭐⭐",
-    name: "Nicholas A. ✅",
+    name: "Suliha O. ✅",
     message:
       "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable.",
   },
   {
     star: "⭐⭐⭐⭐",
-    name: "Suliha O. ✅",
+    name: "Ogunjimakin J. ✅",
     message:
       "Shop.co has changed the way I shop! Their curated selections and quality are unbeatable.",
   },
@@ -22,7 +22,7 @@ const testimonials = [
   },
   {
     star: "⭐⭐",
-    name: "Johnson J. ✅.",
+    name: "Adedeji I. ✅.",
     message:
       "A shopping experience like no other. From browsing to checkout, everything felt smooth.",
   },
