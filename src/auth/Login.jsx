@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import Loader from '../components/Loader';
+import Header from '../components/Header'
 
 export const Login = () => {
     const [phone, setPhone] = useState('');
     const [password, setPassword] = useState('');
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState('');
-
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -19,7 +19,6 @@ export const Login = () => {
         if (currentUser?.loggedIn) {
             navigate('/');
         }
-        
         return () => clearTimeout(timer);
     }, 
     [navigate]);
@@ -50,7 +49,6 @@ export const Login = () => {
         const user = users.find(
             (user) => user.phone === trimmedPhone && user.password === trimmedPassword
         );
-
         if (user) {
             localStorage.setItem(
                 'currentUser', 
