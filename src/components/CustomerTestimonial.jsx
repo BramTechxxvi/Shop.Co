@@ -10,19 +10,19 @@ const testimonials = [
   },
   {
     star: "⭐⭐⭐⭐",
-    name: "Micheal I. ✅",
+    name: "Suliha O. ✅",
     message:
       "Shop.co has changed the way I shop! Their curated selections and quality are unbeatable.",
   },
   {
     star: "⭐⭐⭐",
-    name: "Apostle J. ✅",
+    name: "Muyiwa B. ✅",
     message:
       "I was amazed by the fast delivery and how the clothes fit perfectly. Highly recommended!",
   },
   {
     star: "⭐⭐",
-    name: "Moses I. ✅.",
+    name: "Johnson J. ✅.",
     message:
       "A shopping experience like no other. From browsing to checkout, everything felt smooth.",
   },
