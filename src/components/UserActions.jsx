@@ -1,16 +1,21 @@
 import { Link, useNavigate } from "react-router-dom";
 import { HiOutlineUser, HiOutlineShoppingCart } from "react-icons/hi";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 const UserActions = () => {
   const navigate = useNavigate();
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+
   const [cartCount, setCartCount] = useState(0);
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cartItems")) || [];
     setCartCount(storedCart.length);
   }, []);
+
+  c
 
   const handleLogout = () => {
     localStorage.removeItem("currentUser");
