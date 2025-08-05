@@ -6,16 +6,8 @@ const UserActions = () => {
   const navigate = useNavigate();
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-
-  const [cartCount, setCartCount] = useState(0);
-
-  useEffect(() => {
-    const storedCart = JSON.parse(localStorage.getItem("cartItems")) || [];
-    setCartCount(storedCart.length);
-  }, []);
-
   const cartItems = useSelector((state) => state.cart.cartItems || []);
-  const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+  const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   const handleLogout = () => {
     localStorage.removeItem("currentUser");
