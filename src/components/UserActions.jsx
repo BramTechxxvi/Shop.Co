@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
 import { HiOutlineUser, HiOutlineShoppingCart } from "react-icons/hi";
-import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 const UserActions = () => {
@@ -15,7 +14,8 @@ const UserActions = () => {
     setCartCount(storedCart.length);
   }, []);
 
-  c
+  const cartItems = useSelector((state) => state.cart.cartItems || []);
+  const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   const handleLogout = () => {
     localStorage.removeItem("currentUser");
