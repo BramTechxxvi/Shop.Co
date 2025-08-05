@@ -8,7 +8,6 @@ const CartModal = ({ isOpen, onClose }) => {
   const dispatch = useDispatch();
 
   if (!isOpen) return null;
-
   const visibleItems = cartItems.slice(0, 4);
 
   return (
